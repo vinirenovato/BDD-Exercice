@@ -1,0 +1,19 @@
+Feature: Register a new user
+
+  Scenario Outline: Register a PJ user and a PF and test in Chrome and Firefox browsers 
+    Given I'm using the "<browser>"
+      And I'm on my website
+      And I enter the new user registration page
+     When i select a "<type of person>"
+      And i insert the necessary information
+      And i click save
+     Then i end the registration successfully.
+  
+    Examples: 
+  
+      | browser | browser | 
+      | Chrome  | PF      | 
+      | Firefox | PF      | 
+      | Chrome  | PJ      | 
+      | Firefox | PJ      | 
+  

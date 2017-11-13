@@ -4,10 +4,10 @@ Feature: Register a new user
     Given I'm using the "<browser>"
       And I'm on my website
       And I enter the new user registration page
-     When i select a "<type of person>"
-      And i insert the necessary information
-      And i click save
-     Then i end the registration successfully.
+     When I select a "<type of person>"
+      And I insert the necessary information
+      And I click save
+     Then I end the registration successfully.
   
     Examples: 
   
